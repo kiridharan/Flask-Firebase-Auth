@@ -13,5 +13,14 @@ $ pip install -r requirements.txt
 
 ```
 $ virtualenv env 
+```
+windows users:
+```
 $ env/bin/activate  
+```
+
+linux\Mac users:
+
+```
+$ source env/bin/activate
 ```
