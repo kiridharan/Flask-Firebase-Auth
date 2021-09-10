@@ -1,19 +1,9 @@
-import flask
 import pyrebase
 from flask import render_template, request, redirect, session
 from flask import *
-import os
 
 app = Flask(__name__)
-config = {
-  "apiKey": "AIzaSyCFW7arwN2outIajLOS8-tInxG4iZ5rRB8",
-  "authDomain": "auth-methor.firebaseapp.com",
-  "databaseURL": "https://auth-methor-default-rtdb.firebaseio.com",
-  "projectId": "auth-methor",
-  "storageBucket": "auth-methor.appspot.com",
-  "messagingSenderId": "389421129279",
-  "appId": "1:389421129279:web:c793eb30ffcab57693e28a"
-}
+
 
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
